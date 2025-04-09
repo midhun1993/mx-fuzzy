@@ -1,0 +1,8 @@
+Algorithm	Description	Used in
+Levenshtein Distance	Measures number of edits (insert/delete/replace)	FuzzyWuzzy, spell-check
+Damerau-Levenshtein	Adds transposition (swap) as edit	More realistic for typos
+Jaro-Winkler	Based on matching chars and transpositions	Good for short strings (e.g., names)
+Smith-Waterman	Local alignment of substrings	Bioinformatics, partial matches
+Hamming Distance	Number of differing positions (equal-length strings)	DNA, binary matching
+Cosine Similarity (n-gram based)	Text similarity using vector math	NLP, search engines
+Jaccard Similarity	Set-based comparison of substrings or tokens	NLP, deduplication
