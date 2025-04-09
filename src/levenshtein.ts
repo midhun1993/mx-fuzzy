@@ -1,7 +1,7 @@
 import Algo from "./algo";
 import { MatchScore } from "./fuzzy";
 
-export class LevenshteinDistance extends Algo {
+export class Levenshtein extends Algo {
   
     minimum(arr: number[]):number
     {

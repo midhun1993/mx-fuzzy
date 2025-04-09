@@ -3,7 +3,7 @@ import { MatchScore } from "./fuzzy";
 export default abstract class Algo 
 {
     context:any = {}
-    abstract match(s1:string, s2:string):MatchScore; 
+    abstract match(s1:string, s2:string, config?:any):MatchScore; 
     abstract standardizeScore(score:number, meta:any):MatchScore;
     getContext():any
     {
@@ -17,5 +17,10 @@ export default abstract class Algo
     cleanContext() 
     {
         this.context = {};
+    }
+
+    addPadding(str:string):string 
+    {
+        return "#"+str;
     }
 }
