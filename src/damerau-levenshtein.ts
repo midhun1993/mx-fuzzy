@@ -67,8 +67,9 @@ export class DamerauLevenshtein extends Algo
 
     match(s1: string, s2: string, config:any): MatchScore 
     {
-        if(config.mode === 'DST') {
-
+        if(config.mode === 'DAT') {
+            // todo
+            // https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance#cite_note-Boytsov-7
         }
         return this.optimalStringAlignmentDistance(s1, s2);
     }
